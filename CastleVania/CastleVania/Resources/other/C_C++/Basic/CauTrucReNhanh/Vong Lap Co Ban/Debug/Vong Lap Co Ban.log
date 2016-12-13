@@ -1,0 +1,26 @@
+﻿Build started 7/16/2016 12:52:34 PM.
+     1>Project "D:\C_C++\Basic\CauTrucReNhanh\Vong Lap Co Ban\Vong Lap Co Ban.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(117): error C2084: function 'void Output(int [],int)' already has a body
+                 d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(6) : see previous definition of 'Output'
+     1>d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(125): error C2084: function 'void GenerateRandomIntArray(int [],int)' already has a body
+                 d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(14) : see previous definition of 'GenerateRandomIntArray'
+     1>d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(131): error C3861: 'Output': identifier not found
+     1>d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(135): error C2084: function 'void SubArr(int [],int)' already has a body
+                 d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(24) : see previous definition of 'SubArr'
+     1>d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(161): error C2084: function 'int FindMax(int [],int)' already has a body
+                 d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(50) : see previous definition of 'FindMax'
+     1>d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(190): error C2084: function 'void LenghSub(int [],int)' already has a body
+                 d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(79) : see previous definition of 'LenghSub'
+     1>d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(191): error C3861: 'FindMax': identifier not found
+     1>d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(191): error C2440: 'initializing' : cannot convert from 'int (__cdecl *)(int [],int)' to 'int'
+                 There is no context in which this conversion is possible
+     1>d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(230): error C3861: 'SubArr': identifier not found
+     1>d:\c_c++\basic\cautrucrenhanh\vong lap co ban\source.cpp(231): error C3861: 'LenghSub': identifier not found
+     1>Done Building Project "D:\C_C++\Basic\CauTrucReNhanh\Vong Lap Co Ban\Vong Lap Co Ban.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.20

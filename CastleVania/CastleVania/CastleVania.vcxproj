@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FrameWork\Collision\Collision.cpp" />
+    <ClCompile Include="FrameWork\DynamicObject\Object.cpp" />
+    <ClCompile Include="FrameWork\GlobalVariable\Global.cpp" />
+    <ClCompile Include="FrameWork\Graphics\Graphics.cpp" />
+    <ClCompile Include="FrameWork\Graphics\Windows.cpp" />
+    <ClCompile Include="FrameWork\Input\Input.cpp" />
+    <ClCompile Include="FrameWork\Time\Timer.cpp" />
+    <ClCompile Include="FrameWork\Video\Action.cpp" />
+    <ClCompile Include="FrameWork\Video\Animation.cpp" />
+    <ClCompile Include="FrameWork\Video\Camera.cpp" />
+    <ClCompile Include="FrameWork\Video\Sprite.cpp" />
+    <ClCompile Include="FrameWork\Video\Texture.cpp" />
+    <ClCompile Include="Game\Character\MorningStar.cpp" />
+    <ClCompile Include="Game\Character\Simon.cpp" />
+    <ClCompile Include="Game\Enemy\DeadEnemyEffect.cpp" />
+    <ClCompile Include="Game\Enemy\Ghost.cpp" />
+    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="Game\Main.cpp" />
+    <ClCompile Include="Game\Map\TileMap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FrameWork\Collision\Collision.h" />
+    <ClInclude Include="FrameWork\DynamicObject\Object.h" />
+    <ClInclude Include="FrameWork\GlobalVariable\Define.h" />
+    <ClInclude Include="FrameWork\GlobalVariable\Global.h" />
+    <ClInclude Include="FrameWork\Graphics\Graphics.h" />
+    <ClInclude Include="FrameWork\Graphics\Window.h" />
+    <ClInclude Include="FrameWork\Input\Input.h" />
+    <ClInclude Include="FrameWork\Pattern\ReferenceCounting.h" />
+    <ClInclude Include="FrameWork\Pattern\Singleton.h" />
+    <ClInclude Include="FrameWork\Time\Timer.h" />
+    <ClInclude Include="FrameWork\Video\Action.h" />
+    <ClInclude Include="FrameWork\Video\Animation.h" />
+    <ClInclude Include="FrameWork\Video\Camera.h" />
+    <ClInclude Include="FrameWork\Video\Sprite.h" />
+    <ClInclude Include="FrameWork\Video\Texture.h" />
+    <ClInclude Include="Game\Character\MorningStar.h" />
+    <ClInclude Include="Game\Character\Simon.h" />
+    <ClInclude Include="Game\Enemy\DeadEnemyEffect.h" />
+    <ClInclude Include="Game\Enemy\Ghost.h" />
+    <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="Game\Map\TileMap.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A873E8B9-EB00-4F77-8879-D08043CD1A04}</ProjectGuid>
+    <RootNamespace>CastleVania</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dinput8.lib;dsound.lib;dxerr.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
