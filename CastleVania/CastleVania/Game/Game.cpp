@@ -1,6 +1,6 @@
 #include "Game.h"
-#include "../FrameWork/Input/Input.h"
-#include "../FrameWork/GlobalVariable/Define.h"
+#include "../FrameWork/Input.h"
+#include "../FrameWork/Define.h"
 
 CGame::CGame()
 {
@@ -9,6 +9,7 @@ CGame::CGame()
 	m_tileMap = NULL;
 	m_simon = NULL;
 	m_timer = NULL;
+	m_deltaTime = 0.0f;
 	m_morningStar = NULL;
 }
 
@@ -36,7 +37,10 @@ bool CGame::Init(HINSTANCE hInstance)
 
 	/***************Simon**********************/
 	m_simon = new CSimon();
-	m_simon->Init(L"Resources/simon.png");
+
+	if (!(m_simon->Init(L"Resources/simon.png")))
+		return false;
+
 	m_simon->SetPosition(CCamera::GetInstance()->Transform(200, 100).x + 1, CCamera::GetInstance()->Transform(200, 100).y);
 
 
@@ -66,30 +70,35 @@ void CGame::Run()
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
 		}
-
-		INPUT->ProcessKeyboard();
-		INPUT->Update();
-		
-		float dt;
-
-		if ( (dt = m_timer->GetElapsedTime()) >= ((dt*FRAME_PER_SECOND)/1000))
-		{
-			dt = dt / 1000;
-			m_simon->Update(dt);
-			m_timer->Reset();
-		}
-
-		
-		e_pD3DDevice->ColorFill(e_pBackBuffer, NULL, D3DCOLOR_XRGB(0, 0, 0)); // refresh backbuffer before draw
 		e_spriteHandler->Begin(D3DXSPRITE_ALPHABLEND);
 
-		m_tileMap->Render(CCamera::GetInstance());
-		m_simon->Move();
+		this->Update();
 
 		e_spriteHandler->End();
+		
 		m_graphics->Draw();
 	}
 }
+
+
+void CGame::Update()
+{
+	INPUT->ProcessKeyboard();
+	INPUT->Update();
+
+	e_pD3DDevice->ColorFill(e_pBackBuffer, NULL, D3DCOLOR_XRGB(0, 0, 0)); // refresh backbuffer before draw
+
+	if ((m_deltaTime = m_timer->GetElapsedTime()) >= ((m_deltaTime*FRAME_PER_SECOND) / 1000))
+	{
+		m_deltaTime = m_deltaTime / 1000;
+		m_simon->Update(m_deltaTime);
+		m_tileMap->Render(CCamera::GetInstance());
+		m_simon->Move();
+		m_timer->Reset();
+	}
+	
+}
+
 
 void CGame::End()
 {

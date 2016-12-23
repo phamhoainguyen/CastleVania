@@ -1,0 +1,39 @@
+﻿Build started 12/20/2016 12:26:10 PM.
+     1>Project "D:\Hoai Nguyen\FinalProject\CastleVania\CastleVania\CastleVania\CastleVania.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt FrameWork\Action.cpp
+         Action.cpp
+         c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>d:\hoai nguyen\finalproject\castlevania\castlevania\castlevania\framework\action.cpp(15): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>d:\hoai nguyen\finalproject\castlevania\castlevania\castlevania\framework\action.cpp(22): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>d:\hoai nguyen\finalproject\castlevania\castlevania\castlevania\framework\action.cpp(22): warning C4244: 'argument' : conversion from 'FLOAT' to 'int', possible loss of data
+     1>d:\hoai nguyen\finalproject\castlevania\castlevania\castlevania\framework\action.cpp(29): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>d:\hoai nguyen\finalproject\castlevania\castlevania\castlevania\framework\action.cpp(29): warning C4244: 'argument' : conversion from 'FLOAT' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Hoai Nguyen\FinalProject\CastleVania\CastleVania\Debug\CastleVania.exe" /INCREMENTAL /NOLOGO d3d9.lib d3dx9.lib dinput8.lib dsound.lib dxerr.lib dxguid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Hoai Nguyen\FinalProject\CastleVania\CastleVania\Debug\CastleVania.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Hoai Nguyen\FinalProject\CastleVania\CastleVania\Debug\CastleVania.lib" /MACHINE:X86 Debug\Action.obj
+         Debug\Animation.obj
+         Debug\Camera.obj
+         Debug\Collision.obj
+         Debug\DynamicObject.obj
+         Debug\Global.obj
+         Debug\Graphics.obj
+         Debug\Input.obj
+         Debug\Object.obj
+         Debug\Sprite.obj
+         Debug\StaticObject.obj
+         Debug\Texture.obj
+         Debug\Timer.obj
+         Debug\Windows.obj
+         Debug\DeadEnemyEffect.obj
+         Debug\Game.obj
+         Debug\Ghost.obj
+         Debug\Main.obj
+         Debug\MorningStar.obj
+         Debug\Simon.obj
+         Debug\TileMap.obj
+         CastleVania.vcxproj -> D:\Hoai Nguyen\FinalProject\CastleVania\CastleVania\Debug\CastleVania.exe
+     1>Done Building Project "D:\Hoai Nguyen\FinalProject\CastleVania\CastleVania\CastleVania\CastleVania.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.16

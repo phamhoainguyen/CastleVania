@@ -10,9 +10,6 @@
     <Filter Include="FrameWork\Collision">
       <UniqueIdentifier>{907bb425-68b7-4d68-9773-ac76aaf75333}</UniqueIdentifier>
     </Filter>
-    <Filter Include="FrameWork\DynamicObject">
-      <UniqueIdentifier>{122515e9-96ef-4fe1-be74-4b4adbf20550}</UniqueIdentifier>
-    </Filter>
     <Filter Include="FrameWork\Graphics">
       <UniqueIdentifier>{0e741da3-38ae-4f36-bd06-73ae6c0ac990}</UniqueIdentifier>
     </Filter>
@@ -40,129 +37,144 @@
     <Filter Include="FrameWork\GlobalVariable">
       <UniqueIdentifier>{a7b561af-e7f3-49f0-aaec-9c4cb6fb8628}</UniqueIdentifier>
     </Filter>
+    <Filter Include="FrameWork\Object">
+      <UniqueIdentifier>{122515e9-96ef-4fe1-be74-4b4adbf20550}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FrameWork\Collision.cpp">
+      <Filter>FrameWork\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\DynamicObject.cpp">
+      <Filter>FrameWork\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\Object.cpp">
+      <Filter>FrameWork\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\StaticObject.cpp">
+      <Filter>FrameWork\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\Global.cpp">
+      <Filter>FrameWork\GlobalVariable</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\Graphics.cpp">
+      <Filter>FrameWork\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\Windows.cpp">
+      <Filter>FrameWork\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\Input.cpp">
+      <Filter>FrameWork\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\Timer.cpp">
+      <Filter>FrameWork\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\Action.cpp">
+      <Filter>FrameWork\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\Animation.cpp">
+      <Filter>FrameWork\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\Camera.cpp">
+      <Filter>FrameWork\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\Sprite.cpp">
+      <Filter>FrameWork\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork\Texture.cpp">
+      <Filter>FrameWork\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\MorningStar.cpp">
+      <Filter>Game\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Simon.cpp">
+      <Filter>Game\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DeadEnemyEffect.cpp">
+      <Filter>Game\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Ghost.cpp">
+      <Filter>Game\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\TileMap.cpp">
+      <Filter>Game\Map</Filter>
+    </ClCompile>
     <ClCompile Include="Game\Game.cpp">
       <Filter>Game</Filter>
     </ClCompile>
     <ClCompile Include="Game\Main.cpp">
       <Filter>Game</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Map\TileMap.cpp">
-      <Filter>Game\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Game\Enemy\DeadEnemyEffect.cpp">
-      <Filter>Game\Enemy</Filter>
-    </ClCompile>
-    <ClCompile Include="Game\Enemy\Ghost.cpp">
-      <Filter>Game\Enemy</Filter>
-    </ClCompile>
-    <ClCompile Include="Game\Character\MorningStar.cpp">
-      <Filter>Game\Character</Filter>
-    </ClCompile>
-    <ClCompile Include="Game\Character\Simon.cpp">
-      <Filter>Game\Character</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameWork\Collision\Collision.cpp">
-      <Filter>FrameWork\Collision</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameWork\DynamicObject\Object.cpp">
-      <Filter>FrameWork\DynamicObject</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameWork\Graphics\Graphics.cpp">
-      <Filter>FrameWork\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameWork\Graphics\Windows.cpp">
-      <Filter>FrameWork\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameWork\Input\Input.cpp">
-      <Filter>FrameWork\Input</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameWork\Video\Action.cpp">
-      <Filter>FrameWork\Video</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameWork\Video\Animation.cpp">
-      <Filter>FrameWork\Video</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameWork\Video\Camera.cpp">
-      <Filter>FrameWork\Video</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameWork\Video\Sprite.cpp">
-      <Filter>FrameWork\Video</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameWork\Video\Texture.cpp">
-      <Filter>FrameWork\Video</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameWork\Time\Timer.cpp">
-      <Filter>FrameWork\Time</Filter>
-    </ClCompile>
-    <ClCompile Include="FrameWork\GlobalVariable\Global.cpp">
-      <Filter>FrameWork\GlobalVariable</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game\Game.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Game\Map\TileMap.h">
-      <Filter>Game\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Game\Enemy\DeadEnemyEffect.h">
-      <Filter>Game\Enemy</Filter>
-    </ClInclude>
-    <ClInclude Include="Game\Enemy\Ghost.h">
-      <Filter>Game\Enemy</Filter>
-    </ClInclude>
-    <ClInclude Include="Game\Character\MorningStar.h">
-      <Filter>Game\Character</Filter>
-    </ClInclude>
-    <ClInclude Include="Game\Character\Simon.h">
-      <Filter>Game\Character</Filter>
-    </ClInclude>
-    <ClInclude Include="FrameWork\Collision\Collision.h">
+    <ClInclude Include="FrameWork\Collision.h">
       <Filter>FrameWork\Collision</Filter>
     </ClInclude>
-    <ClInclude Include="FrameWork\DynamicObject\Object.h">
-      <Filter>FrameWork\DynamicObject</Filter>
+    <ClInclude Include="FrameWork\DynamicObject.h">
+      <Filter>FrameWork\Object</Filter>
     </ClInclude>
-    <ClInclude Include="FrameWork\Graphics\Graphics.h">
+    <ClInclude Include="FrameWork\Object.h">
+      <Filter>FrameWork\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWork\StaticObject.h">
+      <Filter>FrameWork\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWork\Define.h">
+      <Filter>FrameWork\GlobalVariable</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWork\Global.h">
+      <Filter>FrameWork\GlobalVariable</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWork\Graphics.h">
       <Filter>FrameWork\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="FrameWork\Graphics\Window.h">
+    <ClInclude Include="FrameWork\Window.h">
       <Filter>FrameWork\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="FrameWork\Input\Input.h">
+    <ClInclude Include="FrameWork\Input.h">
       <Filter>FrameWork\Input</Filter>
     </ClInclude>
-    <ClInclude Include="FrameWork\Video\Action.h">
-      <Filter>FrameWork\Video</Filter>
+    <ClInclude Include="FrameWork\ReferenceCounting.h">
+      <Filter>FrameWork\Pattern</Filter>
     </ClInclude>
-    <ClInclude Include="FrameWork\Video\Animation.h">
-      <Filter>FrameWork\Video</Filter>
+    <ClInclude Include="FrameWork\Singleton.h">
+      <Filter>FrameWork\Pattern</Filter>
     </ClInclude>
-    <ClInclude Include="FrameWork\Video\Camera.h">
-      <Filter>FrameWork\Video</Filter>
-    </ClInclude>
-    <ClInclude Include="FrameWork\Video\Sprite.h">
-      <Filter>FrameWork\Video</Filter>
-    </ClInclude>
-    <ClInclude Include="FrameWork\Video\Texture.h">
-      <Filter>FrameWork\Video</Filter>
-    </ClInclude>
-    <ClInclude Include="FrameWork\Time\Timer.h">
+    <ClInclude Include="FrameWork\Timer.h">
       <Filter>FrameWork\Time</Filter>
     </ClInclude>
-    <ClInclude Include="FrameWork\Pattern\ReferenceCounting.h">
-      <Filter>FrameWork\Pattern</Filter>
+    <ClInclude Include="FrameWork\Action.h">
+      <Filter>FrameWork\Video</Filter>
     </ClInclude>
-    <ClInclude Include="FrameWork\Pattern\Singleton.h">
-      <Filter>FrameWork\Pattern</Filter>
+    <ClInclude Include="FrameWork\Animation.h">
+      <Filter>FrameWork\Video</Filter>
     </ClInclude>
-    <ClInclude Include="FrameWork\GlobalVariable\Define.h">
-      <Filter>FrameWork\GlobalVariable</Filter>
+    <ClInclude Include="FrameWork\Camera.h">
+      <Filter>FrameWork\Video</Filter>
     </ClInclude>
-    <ClInclude Include="FrameWork\GlobalVariable\Global.h">
-      <Filter>FrameWork\GlobalVariable</Filter>
+    <ClInclude Include="FrameWork\Sprite.h">
+      <Filter>FrameWork\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWork\Texture.h">
+      <Filter>FrameWork\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MorningStar.h">
+      <Filter>Game\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Simon.h">
+      <Filter>Game\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DeadEnemyEffect.h">
+      <Filter>Game\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Ghost.h">
+      <Filter>Game\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TileMap.h">
+      <Filter>Game\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Game.h">
+      <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
